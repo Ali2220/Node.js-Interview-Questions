@@ -1,0 +1,15 @@
+1. Event loop allows Node.js to perform non-blocking I/O by delegating operations to the system and executing callbacks when the call stack is empty.
+
+2. process.nextTick() executes before the event loop continues, while setImmediate() runs in the next iteration’s check phase.
+
+3. Node.js uses non-blocking I/O and the event loop to delegate heavy operations to the OS or thread pool, allowing a single thread to handle thousands of concurrent requests.
+
+4. Streams allow Node.js to process large data efficiently by handling it in chunks instead of loading everything into memory.
+
+5. Clustering in Node.js allows the app to use multiple CPU cores by spawning worker processes, improving scalability and performance.
+
+6. Caching reduces database load and improves response time by storing frequently accessed data in fast storage like memory or Redis.
+
+7. Large file uploads should use streaming to avoid loading the file into memory, ensuring the server remains stable and efficient.
+
+8. 
