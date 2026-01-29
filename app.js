@@ -190,3 +190,70 @@
 // });
 
 // app.listen(3000);
+
+// 🧠 Q9 — What is the role of Buffers in Node.js?
+
+// 💻 Buffer Create Example
+// const buffer = Buffer.from('Ali')
+// console.log(buffer);
+// console.log(buffer.toString());
+
+// 💻 Allocate Memory
+// const buf = Buffer.alloc(10)
+// console.log(buf);
+
+// 💻 File Read Example
+// const fs = require("fs");
+
+// fs.readFile("./files/ali-2.jpg", (err, data) => {
+//   console.log(data);
+// });
+
+// 📊 Q10 — How do you monitor & debug Node.js performance?
+
+// 🔍 1️⃣ Console Timing (Basic)
+
+// console.time('Check')
+
+// for(let i =0 ; i < 100; i++){
+//     console.log(i);
+// }
+
+// console.timeEnd('Check');
+
+// 🧠 2️⃣ Memory Usage
+
+// setTimeout(() => {
+//     const memory = process.memoryUsage()
+//     console.log(memory);
+// }, 1000);
+
+// 🔥 3️⃣ Logging (Industry)
+
+// const pino = require('pino')
+// const logger = pino()
+
+// logger.info('Server Started')
+// logger.error('Something Broke')
+
+// 🧪 Mini Practice Task
+// 1️⃣ Har request ka response time log karo:
+
+// const express = require("express");
+// const app = express();
+
+// app.use((req, res, next) => {
+//   const start = Date.now();
+//   res.on("finish", () => {
+//     console.log(`${req.method} ${req.url} - ${Date.now() - start}ms`);
+//   });
+//   next();
+// });
+
+// app.get("/", (req, res) => {
+//   res.send("hello");
+// });
+
+// app.listen(3000);
+
+

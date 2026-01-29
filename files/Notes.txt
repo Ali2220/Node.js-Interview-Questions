@@ -12,4 +12,11 @@
 
 7. Large file uploads should use streaming to avoid loading the file into memory, ensuring the server remains stable and efficient.
 
-8. 
+8. Child processes allow Node.js to offload CPU-intensive tasks so the main event loop remains non-blocking.
+
+9. Buffers in Node.js handle raw binary data, allowing efficient processing of files, streams, and network operations.
+
+10. We monitor Node.js performance using logging, memory usage tracking, profiling tools, and APM solutions to detect bottlenecks and leaks.
+
+11. Worker threads allow Node.js to perform CPU-intensive tasks in parallel without blocking the main event loop.
+
